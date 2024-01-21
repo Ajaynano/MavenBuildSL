@@ -10,7 +10,7 @@ pipeline {
 	
 	stage('Build'){
 		steps{
-			bat "mvn clean install -Dmaven.test.skip=true"
+			sh 'mvn clean install -Dmaven.test.skip=true'
 		}
 	}
 	
